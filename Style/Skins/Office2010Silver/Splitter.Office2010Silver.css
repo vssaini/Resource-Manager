@@ -1,0 +1,59 @@
+.RadSplitter_Office2010Silver {
+  font-size: 12px;
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  /* Borders */
+  /* When ShowContentDuringLoad="false" */
+  /* RadSplitBar/RadSlidingPane resize elements */
+  /* RadSlidingPane tab */
+  /* RadSlidingPane tab */
+  /* RadSplitBar buttons */
+  /* RadSlidingPane buttons */
+  /* RadSlidingPane header */
+  /* RadSlidingPane title text */ }
+  .RadSplitter_Office2010Silver,
+  .RadSplitter_Office2010Silver .rspPaneTabContainer,
+  .RadSplitter_Office2010Silver .rspPane,
+  .RadSplitter_Office2010Silver .rspResizeBar,
+  .RadSplitter_Office2010Silver .rspSlideContainerResize,
+  .RadSplitter_Office2010Silver .rspPaneHorizontal,
+  .RadSplitter_Office2010Silver .rspResizeBarHorizontal,
+  .RadSplitter_Office2010Silver .rspSlideContainerResizeHorizontal {
+    border-color: #9aa0a6; }
+  .RadSplitter_Office2010Silver .rspLoading {
+    background-image: url('Common/loading.gif'); }
+  .RadSplitter_Office2010Silver .rspResizeBar,
+  .RadSplitter_Office2010Silver .rspSlideContainerResize,
+  .RadSplitter_Office2010Silver .rspResizeBarOver,
+  .RadSplitter_Office2010Silver .rspSlideContainerResizeOver {
+    background-image: url('Splitter/ResizeBarVerticalSprites.gif');
+    background-color: white;
+    border-right-color: #9aa0a6; }
+  .RadSplitter_Office2010Silver .rspResizeBarHorizontal,
+  .RadSplitter_Office2010Silver .rspSlideContainerResizeHorizontal,
+  .RadSplitter_Office2010Silver .rspResizeBarOverHorizontal,
+  .RadSplitter_Office2010Silver .rspSlideContainerResizeOverHorizontal {
+    background-image: url('Splitter/ResizeBarHorizontalSprites.gif');
+    background-color: white;
+    border-bottom-color: #9aa0a6; }
+  .RadSplitter_Office2010Silver .rspPaneTabContainer,
+  .RadSplitter_Office2010Silver .rspSlideHeaderDockIcon,
+  .RadSplitter_Office2010Silver .rspSlideHeaderUndockIcon,
+  .RadSplitter_Office2010Silver .rspSlideHeaderCollapseIcon,
+  .RadSplitter_Office2010Silver .rspCollapseBarExpand,
+  .RadSplitter_Office2010Silver .rspCollapseBarCollapse,
+  .RadSplitter_Office2010Silver .rspCollapseBarHorizontalExpand,
+  .RadSplitter_Office2010Silver .rspCollapseBarHorizontalCollapse {
+    background-image: url('Splitter/ExpandCollapseBarsCommands.gif'); }
+  .RadSplitter_Office2010Silver .rspSlideHeader,
+  .RadSplitter_Office2010Silver .rspSlideTitleContainer,
+  .RadSplitter_Office2010Silver .rspBottom .rspPaneTabContainer,
+  .RadSplitter_Office2010Silver .rspTop .rspPaneTabContainer {
+    background-image: url('Splitter/slideTitleContainerBgr.gif');
+    background-repeat: repeat-x; }
+  .RadSplitter_Office2010Silver .rspBottom .rspPaneTabContainer,
+  .RadSplitter_Office2010Silver .rspTop .rspPaneTabContainer {
+    background-position: 0 -1px; }
+  .RadSplitter_Office2010Silver .rspSlideTitle,
+  .RadSplitter_Office2010Silver .rspPaneTabText {
+    color: #3b3b3b; }
+

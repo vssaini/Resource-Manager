@@ -1,0 +1,16 @@
+.reSpinBox .radfd_skipme,
+.selectedFileName,
+.reTableWizardSelectAllBtn {
+  color: #3b3b3b; }
+
+.rfeUploadInfoPanel {
+  color: #3b3b3b !important;
+  background: #fff !important;
+  border: 1px solid #9aa0a6 !important; }
+
+/*Sprite from RFE*/
+.RadToolBar_Office2010Silver .rtbText {
+  background-image: url('FileExplorer/FileExplorerToolbarSprites.png');
+  _background-image: url('FileExplorer/FileExplorerToolbarSpritesIE6.gif') !important;
+  background-repeat: no-repeat; }
+

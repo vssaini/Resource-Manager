@@ -1,0 +1,63 @@
+.RadButton_Office2010Silver {
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  /* RadButton Office2010Silver Skin */ }
+  .RadButton_Office2010Silver .rbDecorated {
+    font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+    font-size: 12px; }
+  .RadButton_Office2010Silver.rbSkinnedButton,
+  .RadButton_Office2010Silver .rbDecorated, .RadButton_Office2010Silver.rbVerticalButton, .RadButton_Office2010Silver.rbVerticalButton .rbDecorated,
+  .RadButton_Office2010Silver .rbSplitRight,
+  .RadButton_Office2010Silver .rbSplitLeft {
+    background-image: url('Button/ButtonSprites.png');
+    color: #3b3b3b; }
+  .RadButton_Office2010Silver .rbToggleCheckbox,
+  .RadButton_Office2010Silver .rbToggleCheckboxChecked,
+  .RadButton_Office2010Silver .rbToggleCheckboxFilled,
+  .RadButton_Office2010Silver .rbToggleRadio,
+  .RadButton_Office2010Silver .rbToggleRadioChecked {
+    background-image: url('Button/ToggleSprite.png'); }
+  .RadButton_Office2010Silver.rbToggleButton, .RadButton_Office2010Silver.rbToggleButton.rbDisabled:hover {
+    color: #3b3b3b; }
+  .RadButton_Office2010Silver.rbToggleButton:hover {
+    color: black; }
+  .RadButton_Office2010Silver.RadButton.rbLinkButton {
+    background-color: #dbdde1;
+    border: 1px solid #a4abb2;
+    _border: 1px solid #a4abb2 !important;
+    color: #3b3b3b; }
+    .RadButton_Office2010Silver.RadButton.rbLinkButton:hover {
+      background-color: #fae185;
+      _border: 1px solid #a4abb2 !important;
+      color: black; }
+  .RadButton_Office2010Silver.rbLinkButtonChecked, .RadButton_Office2010Silver.rbLinkButtonChecked:hover {
+    background-color: #dbdde1;
+    color: #3b3b3b;
+    border: 1px solid #a4abb2; }
+  .RadButton_Office2010Silver.rbLinkButton.rbDisabled, .RadButton_Office2010Silver.rbLinkButton.rbDisabled:hover {
+    background-color: #dbdde1;
+    border: 1px solid #a4abb2;
+    color: #a4abb2; }
+  .RadButton_Office2010Silver.rbLinkButton:hover .rbSplitLeft, .RadButton_Office2010Silver.rbLinkButton:hover .rbSplitRight {
+    background-color: #dbdde1; }
+  .RadButton_Office2010Silver.rbLinkButton .rbSplitRight {
+    border-left: 1px solid #a4abb2; }
+  .RadButton_Office2010Silver.rbLinkButton .rbSplitRight:hover {
+    background-color: #fae185;
+    border-left: 1px solid #f3d64a; }
+  .RadButton_Office2010Silver.rbLinkButton .rbSplitRight:active, .RadButton_Office2010Silver.rbLinkButton .rbSplitRight:focus {
+    background-color: #ffd86b;
+    border-left: 1px solid #f3d64a; }
+  .RadButton_Office2010Silver.rbLinkButton .rbSplitLeft {
+    border-right: 1px solid #a4abb2; }
+  .RadButton_Office2010Silver.rbLinkButton .rbSplitLeft:hover {
+    background-color: #fae185;
+    border-right: 1px solid #f3d64a; }
+  .RadButton_Office2010Silver.rbLinkButton .rbSplitLeft:active, .RadButton_Office2010Silver.rbLinkButton .rbSplitLeft:focus {
+    background-color: #ffd86b;
+    border-right: 1px solid #f3d64a; }
+  .RadButton_Office2010Silver.rbLinkButton.rbDisabled .rbSplitLeft, .RadButton_Office2010Silver.rbLinkButton.rbDisabled .rbSplitLeft:hover, .RadButton_Office2010Silver.rbLinkButton.rbDisabled .rbSplitLeft:active, .RadButton_Office2010Silver.rbLinkButton.rbDisabled .rbSplitLeft:focus {
+    border-right: 1px solid #a4abb2; }
+  .RadButton_Office2010Silver.rbLinkButton.rbDisabled .rbSplitRight, .RadButton_Office2010Silver.rbLinkButton.rbDisabled .rbSplitRight:hover, .RadButton_Office2010Silver.rbLinkButton.rbDisabled .rbSplitRight:active, .RadButton_Office2010Silver.rbLinkButton.rbDisabled .rbSplitRight:focus {
+    border-left: 1px solid #a4abb2; }
+

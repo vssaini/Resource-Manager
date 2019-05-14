@@ -1,0 +1,100 @@
+body
+{
+    font: 12px "Segoe UI" ,Arial,sans-serif;
+    color: #3B3B3B;
+    line-height: 20px;
+}
+
+.blueText
+{
+    color: #0e8cc7;
+    font: 36px "Droid Sans" , Arial, sans-serif;
+    text-align: center;
+}
+
+.orangeText
+{
+    color: #f49020;
+    font: 36px "Droid Sans" , Arial, sans-serif;
+    text-align: center;
+}
+
+.darkBlue
+{
+    color: #00008b;
+    font: 14px "Droid Sans", "Segoe UI", Arial, sans-serif;
+    text-align: center;
+}
+
+/*=========================================*/
+/*     STYLES NECESSARY FOR SCHEDULER      */
+/*=========================================*/
+
+/*Modification of the below style is not recommended. They are necessary for Scheduler directly or indirectly.*/
+
+.RadScheduler .rsAptIn, .RadScheduler .rsTimelineView .rsAptContent
+{
+    height: 90px !important;
+}
+
+.zoomCursor
+{
+    cursor: url('ImgSchd/CursorZoom.png'), auto;
+    height: 50px;
+    width: 70px;
+}
+
+.Disabled
+{
+    background: center url('ImgSchd/NoSlot.png') no-repeat #dadbd8 !important;
+    vertical-align: middle;
+}
+
+.headerImg
+{
+    height: 336px;
+    width: 420px;
+    border: none;
+}
+
+a img
+{
+    border: none;
+}
+
+a hover 
+{
+    text-decoration: none;
+}
+
+#Label1Panel
+{
+    display: inline !important;
+}
+
+.lblError
+{
+    background: #CC0000;
+    border: 1px solid darkred;
+    color: white;
+    font: bold 16px "Segoe UI" , Arial, sans-serif;
+    vertical-align: middle;
+    display: none;
+    height: 30px;
+    line-height: 28px;
+    position: relative;
+    padding-left: 5px;
+    width: 743px;
+    z-index: 1001;
+    cursor: pointer;
+    -moz-opacity: 0.9;
+}
+
+td.DayWithAppointments, td.DayWithAppointments a
+{
+    background-color: orange;
+}
+.TableLayout_Office2007 td.DayWithAppointments a
+{
+    border-color: orange;
+}
