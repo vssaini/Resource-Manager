@@ -1,0 +1,59 @@
+/// <summary>
+    /// Check if event exceeds limit of more than one event.
+    /// </summary>
+    /// <param name="apt">Appointment object which needs to be checked.</param>
+    /// <param name="scheduler">RadScheduler in which appointment would be created.</param>
+    /// <returns>Return true if event exceeds limit.</returns>
+    public static bool ExceedsLimit(Appointment apt, RadScheduler scheduler)
+    {
+        var aptCount = 0;
+        const int aptLimit = 1;
+        var aptRoom = apt.Resources.GetResourceByType("Room");
+
+        foreach (var existingApt in scheduler.Appointments.GetAppointmentsInRange(apt.Start, apt.End))
+        {
+            var exstAptRoom = existingApt.Resources.GetResourceByType("Room");
+            if (existingApt.Visible && exstAptRoom.Equals(aptRoom))
+                aptCount++;
+        }
+
+        return (aptCount > aptLimit - 1);
+    }
+
+    /// <summary>
+    /// Check if event overlaps another event.
+    /// </summary>
+    /// <param name="apt">Appointment object which needs to be checked.</param>
+    /// <param name="scheduler">RadScheduler in which appointment would be created.</param>
+    /// <returns>Return true if event overlap.</returns>
+    public static bool AppointmentsOverlap(Appointment apt, RadScheduler scheduler)
+    {
+        if (ExceedsLimit(apt, scheduler))
+        {
+            var resAppts = new List<Appointment>();
+            var aptRoom = apt.Resources.GetResourceByType("Room");
+
+            foreach (var existApt in scheduler.Appointments.GetAppointmentsInRange(apt.Start, apt.End))
+            {
+                var exstAptRoom = existApt.Resources.GetResourceByType("Room");
+
+                if (aptRoom.Equals(exstAptRoom))
+                {
+                    resAppts.Add(existApt);
+                }
+            }
+
+            var aptId = Convert.ToInt32(Convert.ToString(apt.ID));
+
+            foreach (var a in resAppts)
+            {
+                var aId = Convert.ToInt32(Convert.ToString(a.ID));
+                if (aId != aptId)
+                {
+                    return true;
+                }
+            }
+
+        }
+        return false;
+    }

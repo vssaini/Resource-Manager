@@ -1,0 +1,42 @@
+USE [AscentDB]
+GO
+
+/****** Object:  Table [dbo].[C01RM0200]    Script Date: 12/11/2013 07:24:20 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+SET ANSI_PADDING ON
+GO
+
+CREATE TABLE [dbo].[C01RM0200](
+	[ResourceEventHeadID] [bigint] IDENTITY(1,1) NOT NULL,
+	[ResourceID] [int] NOT NULL,
+	[ResourceEvent] [varchar](2000)NOT NULL,
+	[EventStartDate] [datetime] NOT NULL,
+	[EventEndDate] [datetime] NOT NULL,	
+	[BookedBy] [varchar](10) NOT NULL,
+	[HostEmpNo] [varchar](10) NOT NULL,
+	[RecurrenceRule] [nvarchar](1024) NULL,
+	[RecurrenceParentID] [int] NULL,
+ CONSTRAINT [PK_C01RM0200] PRIMARY KEY CLUSTERED 
+(
+	[ResourceEventHeadID] ASC
+)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+
+SET ANSI_PADDING OFF
+GO
+
+ALTER TABLE [dbo].[C01RM0200]  WITH CHECK ADD  CONSTRAINT [FK_C01RM0200_C01RM0100] FOREIGN KEY([ResourceID])
+REFERENCES [dbo].[C01RM0100] ([ResourceID])
+GO
+
+ALTER TABLE [dbo].[C01RM0200] CHECK CONSTRAINT [FK_C01RM0200_C01RM0100]
+GO
+
+
